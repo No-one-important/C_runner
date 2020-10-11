@@ -1,2 +1,2 @@
 language = "c"
-run = "c++ c_runner.c"
+run = "clang-7 -pthread -lm -o main main.c && ./main"

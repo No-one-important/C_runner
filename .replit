@@ -1,0 +1,2 @@
+language = "c"
+run = "c++ c_runner.c"

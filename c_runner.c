@@ -2,6 +2,8 @@
 #include<stdlib.h>
 #include<string.h>
 
+// you must rename the executable of this program so it will work properly
+
 int main()
 {
 	char c_compile[] = "c++ ";

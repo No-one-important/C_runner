@@ -18,11 +18,15 @@ int main()
 
 	printf("\n\n\n");
 
-	system(strcat(c_compile, strcat(path, "-o a")));
+	system(strcat(c_compile, strcat(path, " -o a")));
 	// compiling it
 
-	system("a");
+	printf("\\Start\n");
+
+	system(".\\a");
 	// running it
+
+	printf("\n\\End");
 
 	system("del a.exe");
 	// deleting the binary

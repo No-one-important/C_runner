@@ -15,9 +15,13 @@ int main(int argc,char* argv[])
     if(argc>=2)
     {
         system(strcat(c_compile, argv[1]));
+
         printf("\\start\n");
+
         system(".\\a");
+
         printf("\n\\end");
+
         system("del a.exe");
     }
 }

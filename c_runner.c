@@ -18,7 +18,7 @@ int main()
 
 	printf("\n\n\n");
 
-	system(strcat(c_compile, path));
+	system(strcat(c_compile, strcat(path, "-o a")));
 	// compiling it
 
 	system("a");

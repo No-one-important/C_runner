@@ -10,18 +10,40 @@ int main(int argc,char* argv[])
 
     if(argc==1)
     {
-        printf("please enter the file name as a command line argument\n");
+        char path[50];
+
+        printf("Enter the filename: ");
+        gets(path);
+        // getting the file to run
+
+        printf("\n\n\n");
+
+        system(strcat(c_compile, strcat(path, " -o a")));
+        // compiling it
+
+        printf("\\Start\n");
+
+        system(".\\a");
+        // running it
+
+        printf("\n\\End");
+
+        system("del a.exe");
+        // deleting the binary
     }
     if(argc>=2)
     {
-        system(strcat(c_compile, argv[1]));
+        system(strcat(c_compile, strcat(argv[1], " -o a")));
+        // compiling it
 
-        printf("\\start\n");
+        printf("\\Start\n");
 
         system(".\\a");
+        // running it
 
-        printf("\n\\end");
+        printf("\n\\End");
 
         system("del a.exe");
+        // deleting the binary
     }
 }
